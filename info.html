@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    Author: Emily Prewitt
+    Date: June 27, 2022
+    Assignment: Fit for Fun Fitness Club
+    filename: info.html
+    -->
+    <meta charset="utf-8">
+    <title>Request Info - Fit for Fun</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <h2>Fit for Fun Fitness Club</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="info.html">Info</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2>Request Info</h2>
+      <form method="get" action="thankyou.html">
+        <label for="fname">
+          First Name:
+          <input autofocus required type="text" name="fname" id="fname" placeholder="First Name">
+        </label>
+        <label for="lname">
+          Last Name:
+          <input required type="text" name="lname" id="lname" placeholder="Last Name">
+        </label>
+        <label for="email">
+          Email:
+          <input type="email" name="email" id="email" placeholder="Email">
+        </label>
+        <label for="tel">
+          Phone Number:
+          <input type="tel" name="tel" id="tel" placeholder="Phone Number">
+        </label>
+        <label for="contactpref">
+          Preferred Contact Method:
+          <select name="contactpref" id="contactpref">
+            <option>Email</option>
+            <option>Phone</option>
+            <option>Owl</option>
+          </select>
+        </label>
+
+        <h3>Desired Classes:</h3>
+        <label for="crosstrain">
+          <input type="checkbox" class="checkbox" name="crosstrain" id="crosstrain">
+          Cross Training
+        </label>
+        <label for="sprint">
+          <input type="checkbox" class="checkbox" name="sprint" id="sprint">
+          Sprint
+        </label>
+        <label for="spin">
+          <input type="checkbox" class="checkbox" name="spin" id="spin">
+          Spin
+        </label>
+        <label for="bodypump">
+          <input type="checkbox" class="checkbox" name="bodypump" id="bodypump">
+          BodyPump
+        </label>
+        <label for="bodycombat">
+          <input type="checkbox" class="checkbox" name="bodycombat" id="bodycombat">
+          BodyCombat
+        </label>
+        <label for="stepinterval">
+          <input type="checkbox" class="checkbox" name="stepinterval" id="stepinterval">
+          Step Interval
+        </label>
+        <label for="advcrosstrain">
+          <input type="checkbox" class="checkbox" name="advcrosstrain" id="advcrosstrain">
+          Advanced Cross Training
+        </label>
+        <label for="mixxedfit">
+          <input type="checkbox" class="checkbox" name="mixxedfit" id="mixxedfit">
+          MixxedFIT
+        </label>
+        <label for="zumba">
+          <input type="checkbox" class="checkbox" name="zumba" id="zumba">
+          Zumba
+        </label>
+
+        <h3>Desired Class Time:</h3>
+        <label for="am">
+          <input type="radio" name="desiredtime" id="am">
+          AM
+        </label>
+        <label for="pm">
+          <input type="radio" name="desiredtime" id="pm">
+          PM
+        </label>
+
+        <input type="submit" class="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
